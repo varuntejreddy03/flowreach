@@ -1,0 +1,39 @@
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import MainLayout from './layouts/MainLayout';
+import HomePage from './pages/HomePage';
+import ServicesPage from './pages/ServicesPage';
+import CaseStudiesPage from './pages/CaseStudiesPage';
+import AboutPage from './pages/AboutPage';
+import ContactPage from './pages/ContactPage';
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
+
+// Scroll to top on route change
+const ScrollToTop = () => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+};
+
+function App() {
+  return (
+    <Router>
+      <ScrollToTop />
+      <Routes>
+        <Route path="/" element={<MainLayout />}>
+          <Route index element={<HomePage />} />
+          <Route path="services" element={<ServicesPage />} />
+          <Route path="case-studies" element={<CaseStudiesPage />} />
+          <Route path="about" element={<AboutPage />} />
+          <Route path="contact" element={<ContactPage />} />
+        </Route>
+      </Routes>
+    </Router>
+  );
+}
+
+export default App;

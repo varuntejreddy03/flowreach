@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #16a34a;
+  --color-primary-dark: #15803d;
+  --color-primary-light: #4ade80;
+  --color-background-light: #ffffff;
+  --color-background-soft: #f8fafc;
+  --color-surface-light: #f1f5f9;
+  --color-border-light: #e2e8f0;
+
+  /* Dark mode variants (keeping for compatibility but focusing on White) */
+  --color-background-dark: #050a06;
+  --color-surface-dark: #0a110b;
+  --color-border-dark: #141f16;
+
+  --font-display: "Clash Display", system-ui, sans-serif;
+  --font-body: "Plus Jakarta Sans", system-ui, sans-serif;
+  --font-headline: "Clash Display", system-ui, sans-serif;
+
+  --radius-default: 0.25rem;
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
+  --radius-2xl: 1rem;
+  --radius-3xl: 1.5rem;
+}
+
+@layer base {
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-display;
+  }
+
+  body {
+    @apply bg-background-light text-slate-800 font-body transition-colors duration-300;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-slate-100;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-slate-300 rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-slate-400;
+  }
+}
+
+@layer components {
+  .glass-nav {
+    @apply fixed top-0 w-full z-50 bg-white/80 backdrop-blur-xl border-b border-slate-200/60;
+  }
+
+  .glass-card {
+    @apply bg-white border border-slate-100 shadow-sm transition-all duration-300;
+  }
+
+  .glass-card:hover {
+    @apply border-primary/30 shadow-md -translate-y-1;
+  }
+
+  .glow-text {
+    text-shadow: 0 0 30px rgba(22, 163, 74, 0.2);
+  }
+
+  .bg-grid-pattern-overlay {
+    background-image: linear-gradient(to right, #00000003 1px, transparent 1px),
+      linear-gradient(to bottom, #00000003 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+
+  .map-filter {
+    filter: grayscale(100%) contrast(90%);
+  }
+}
