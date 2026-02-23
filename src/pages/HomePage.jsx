@@ -92,16 +92,23 @@ const HomePage = () => {
                 whileHover={{ scale: 1.05, boxShadow: "0 20px 25px -5px rgb(22 163 74 / 0.1), 0 8px 10px -6px rgb(22 163 74 / 0.1)" }}
                 whileTap={{ scale: 0.95 }}
                 onClick={() => navigate('/contact')}
-                className="flex items-center justify-center gap-3 bg-primary hover:bg-primary-dark text-white text-lg font-bold py-5 px-10 rounded-2xl transition-all shadow-xl shadow-primary/20 min-w-[280px]"
+                className="flex items-center justify-center gap-3 bg-slate-900 hover:bg-primary text-white text-lg font-bold py-5 px-10 rounded-2xl transition-all shadow-xl shadow-slate-900/10 min-w-[280px]"
               >
                 <span>Request Free Audit</span>
                 <span className="material-symbols-outlined">analytics</span>
               </motion.button>
 
-              <Link to="/services" className="flex items-center justify-center gap-2 group px-10 py-5 rounded-2xl text-lg font-bold text-slate-700 hover:text-primary transition-colors border border-slate-200 hover:border-primary/30">
-                View Services
-                <span className="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
-              </Link>
+              <motion.a
+                href={`https://wa.me/919959194226?text=${encodeURIComponent("Hello! 🚀 I'm interested in a strategy audit for my business. I saw your website and would like to talk.")}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="flex items-center justify-center gap-3 px-10 py-5 rounded-2xl text-lg font-bold text-[#25D366] hover:bg-[#25D366] hover:text-white border-2 border-[#25D366] transition-all bg-transparent"
+              >
+                <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.588-5.946 0-6.556 5.332-11.888 11.888-11.888 3.176 0 6.161 1.237 8.404 3.48s3.481 5.229 3.481 8.404c0 3.176-1.237 6.161-3.48 8.404-2.244 2.244-5.229 3.481-8.404 3.481-1.936 0-3.834-.473-5.534-1.371l-5.854 1.5l.473-6.195zm5.534-1.428l.325.192c1.455.859 3.132 1.313 4.881 1.313 5.432 0 9.849-4.417 9.849-9.849 0-2.63-1.025-5.101-2.887-6.963s-4.333-2.887-6.962-2.887c-5.433 0-9.85 4.417-9.85 9.85 0 2.052.64 4.045 1.849 5.717l.217.301-.849 3.102 3.277-.839zm12.915-11.53c-.229-.115-1.352-.667-1.562-.743-.21-.076-.363-.115-.516.115-.152.23-.591.743-.725.897-.133.152-.267.171-.497.057-.23-.115-.968-.357-1.844-1.138-.682-.609-1.142-1.36-1.275-1.591-.134-.23-.014-.354.101-.469l.41-.479c.115-.133.152-.229.229-.382.076-.153.038-.287-.019-.401-.057-.115-.516-1.243-.706-1.701-.184-.445-.372-.384-.516-.391l-.441-.008c-.152 0-.401.057-.611.287-.21.23-.801.783-.801 1.911s.821 2.217.935 2.37c.115.153 1.615 2.466 3.914 3.457.547.236.974.377 1.307.483.55.174 1.051.15 1.446.091.44-.066 1.352-.553 1.543-1.087.191-.535.191-.993.134-1.087-.057-.115-.21-.171-.44-.286z" /></svg>
+                Message on WhatsApp
+              </motion.a>
             </motion.div>
           </motion.div>
         </div>
