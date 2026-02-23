@@ -282,7 +282,7 @@ const HomePage = () => {
                     <span className="material-symbols-outlined group-hover:translate-x-1 transition-transform">trending_flat</span>
                   </button>
                   <a
-                    href="https://wa.me/919959194226"
+                    href={`https://wa.me/919959194226?text=${encodeURIComponent("Hello FlowReach! 🚀 I'm interested in your 24/7 support and lead systems. Can we talk?")}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="px-10 py-5 bg-[#25D366] text-white rounded-2xl font-bold text-lg hover:bg-[#20bd5a] hover:scale-105 transition-all shadow-xl shadow-green-500/20 flex items-center gap-3"
