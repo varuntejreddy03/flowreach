@@ -27,6 +27,11 @@
 
 @layer base {
 
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
   h1,
   h2,
   h3,
@@ -40,8 +45,19 @@
     @apply bg-background-light text-slate-800 font-body transition-colors duration-300;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    -webkit-tap-highlight-color: transparent;
+    overflow-x: hidden;
   }
 
+  * {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  img {
+    @apply max-w-full h-auto;
+  }
+
+  /* Desktop scrollbar */
   ::-webkit-scrollbar {
     width: 8px;
   }
@@ -56,6 +72,14 @@
 
   ::-webkit-scrollbar-thumb:hover {
     @apply bg-slate-400;
+  }
+
+  /* Hide scrollbar on mobile for cleaner look */
+  @media (max-width: 640px) {
+    ::-webkit-scrollbar {
+      width: 0;
+      display: none;
+    }
   }
 }
 
@@ -85,4 +109,18 @@
   .map-filter {
     filter: grayscale(100%) contrast(90%);
   }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 20s linear infinite;
 }

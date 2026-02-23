@@ -2,9 +2,9 @@ import Logo from './Logo';
 import { motion } from 'framer-motion';
 
 const Footer = () => (
-  <footer className="bg-white border-t border-slate-100 py-16">
+  <footer className="bg-white border-t border-slate-100 py-10 sm:py-16">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 sm:gap-12 mb-8 sm:mb-12">
         <div className="flex flex-col gap-6">
           <Logo className="scale-90 origin-left" />
           <p className="text-slate-500 text-sm leading-relaxed max-w-xs">
@@ -55,7 +55,7 @@ const Footer = () => (
         </div>
       </div>
 
-      <div className="border-t border-slate-100 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+      <div className="border-t border-slate-100 pt-6 sm:pt-8 flex flex-col md:flex-row justify-between items-center gap-3 sm:gap-4">
         <div className="text-slate-500 text-xs font-medium">
           © 2026 FlowReach Marketing Solutions. All rights reserved.
         </div>
