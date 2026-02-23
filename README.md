@@ -1,16 +1,77 @@
-# React + Vite
+# 🚀 FlowReach Marketing Solutions
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Structured Ad Systems for Ambitious Local Businesses.**
 
-Currently, two official plugins are available:
+FlowReach is a premium, performance-driven digital marketing agency landing page built for high conversion. It leverages a "Singapore-standard" methodology to transform local business presence into predictable lead-generation systems.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![FlowReach Logo](public/logo.svg)
 
-## React Compiler
+## ✨ Premium Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **🎯 Results-Focused Design**: Specifically tailored for Real Estate, Gyms, Restaurants, and Cafés.
+- **⚡ High-Authority Hub**: Built with **Clash Display** for that sharp, "funded-SaaS" feeling and **Plus Jakarta Sans** for professional readability.
+- **🎬 Advanced Animations**: Liquid-smooth scroll parallax, staggered entry animations, and 3D hover effects powered by **Framer Motion**.
+- **🔄 Smart Conversion Funnel**: Interactive contact forms that automatically construct and redirect high-intent leads to **WhatsApp** with personalized details.
+- **📱 Responsive Excellence**: Fully optimized for mobile-first interaction to capture leads on the go.
+- **📊 Performance Ready**: Designed to showcase ROI tracking, AI-powered optimization, and full-funnel strategies.
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Framework**: [React 19](https://react.dev/)
+- **Build Tool**: [Vite](https://vitejs.dev/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **Animations**: [Framer Motion](https://www.framer.com/motion/)
+- **Icons**: [Lucide React](https://lucide.dev/) & [Material Symbols](https://fonts.google.com/icons)
+- **Routing**: [React Router 7](https://reactrouter.com/)
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js (Latest LTS recommended)
+- npm or yarn
+
+### Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/varuntejreddy03/flowreach.git
+   cd flowreach
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Start the development server**
+   ```bash
+   npm run dev
+   ```
+
+4. **Build for production**
+   ```bash
+   npm run build
+   ```
+
+## 📐 Project Structure
+
+```bash
+src/
+├── assets/          # Static assets & images
+├── components/      # Reusable UI components (Logo, Navbar, Footer)
+├── layouts/         # Page templates (MainLayout)
+├── pages/           # Main route views (Home, Services, About, Contact)
+└── index.css        # Global styles & Design Tokens
+```
+
+## 📞 Contact
+
+- **Founder**: Based in Hyderabad (with International Exposure from Singapore)
+- **Email**: flowreachmarketingsolutions@gmail.com
+- **Phone**: +91 9959194226
+- **Location**: Gachibowli, Hyderabad
+
+---
+
+Built with Precision by **FlowReach Marketing Solutions**.
