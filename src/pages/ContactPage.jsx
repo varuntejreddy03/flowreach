@@ -137,15 +137,7 @@ const ContactPage = () => {
                   </div>
                 </div>
               </div>
-              <div className="relative w-full h-48 sm:h-64 md:h-80 rounded-xl sm:rounded-2xl overflow-hidden border border-slate-200 shadow-lg bg-slate-100">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.4635887205466!2d78.36545631487673!3d17.44222088804561!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb93dc8c5d69df%3A0x19688eb5c550c27a!2sGachibowli%2C%20Hyderabad%2C%20Telangana!5e0!3m2!1sen!2sin!4v1625634567890!5m2!1sen!2sin"
-                  className="w-full h-full border-0 map-filter grayscale contrast-125"
-                  allowFullScreen=""
-                  loading="lazy"
-                  title="HQ Location"
-                ></iframe>
-              </div>
+
             </motion.div>
           </div>
         </div>
