@@ -55,7 +55,7 @@ const Navbar = () => {
               onClick={() => { navigate('/contact'); setIsOpen(false); }}
               className="hidden sm:block bg-primary hover:bg-primary-dark text-white text-xs font-black font-display uppercase tracking-widest py-3 px-6 rounded-xl transition-all shadow-lg shadow-primary/20"
             >
-              Contact Us
+              Book Strategy Call
             </motion.button>
 
             {/* Mobile Menu Toggle */}
@@ -96,7 +96,7 @@ const Navbar = () => {
                   onClick={() => { navigate('/contact'); setIsOpen(false); }}
                   className="w-full bg-primary hover:bg-primary/90 text-white text-base font-bold py-4 rounded-lg transition-all"
                 >
-                  Contact Us
+                  Book Strategy Call
                 </button>
               </div>
             </div>
