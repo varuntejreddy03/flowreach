@@ -236,6 +236,93 @@ const HomePage = () => {
           </div>
         </div>
       </section>
+
+      {/* 24/7 Support Section */}
+      <section className="py-24 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="relative rounded-[3rem] bg-slate-900 overflow-hidden p-12 md:p-20 flex flex-col md:flex-row items-center gap-16"
+          >
+            {/* Background Decorations */}
+            <div className="absolute top-0 right-0 w-96 h-96 bg-primary/10 blur-[100px] rounded-full pointer-events-none"></div>
+            <div className="absolute bottom-0 left-0 w-64 h-64 bg-primary/5 blur-[80px] rounded-full pointer-events-none"></div>
+
+            <div className="flex-1 space-y-8 relative z-10">
+              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/20 border border-primary/30 text-primary-light text-xs font-black uppercase tracking-[0.2em]">
+                24/7 Support
+              </div>
+              <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-white leading-[1.1] tracking-tight">
+                Round-the-Clock <br />
+                Support for Your <span className="text-primary">Business</span>
+              </h2>
+              <p className="text-slate-400 text-lg md:text-xl font-light leading-relaxed max-w-xl">
+                From early mornings to late nights, we're just a message or call away. Our 24/7 customer support ensures you get help whenever you need it.
+              </p>
+
+              <div className="flex flex-wrap gap-4 pt-4">
+                <button
+                  onClick={() => navigate('/contact')}
+                  className="group flex items-center gap-3 bg-white text-slate-900 px-8 py-4 rounded-2xl font-bold hover:bg-primary hover:text-white transition-all shadow-xl"
+                >
+                  Contact Us
+                  <span className="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                </button>
+                <a
+                  href="https://wa.me/919959194226"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-3 bg-[#25D366] text-white px-8 py-4 rounded-2xl font-bold hover:scale-105 transition-all shadow-xl shadow-green-500/20"
+                >
+                  <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24" width="20" height="20"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.588-5.946 0-6.556 5.332-11.888 11.888-11.888 3.176 0 6.161 1.237 8.404 3.48s3.481 5.229 3.481 8.404c0 3.176-1.237 6.161-3.48 8.404-2.244 2.244-5.229 3.481-8.404 3.481-1.936 0-3.834-.473-5.534-1.371l-5.854 1.5l.473-6.195zm5.534-1.428l.325.192c1.455.859 3.132 1.313 4.881 1.313 5.432 0 9.849-4.417 9.849-9.849 0-2.63-1.025-5.101-2.887-6.963s-4.333-2.887-6.962-2.887c-5.433 0-9.85 4.417-9.85 9.85 0 2.052.64 4.045 1.849 5.717l.217.301-.849 3.102 3.277-.839zm12.915-11.53c-.229-.115-1.352-.667-1.562-.743-.21-.076-.363-.115-.516.115-.152.23-.591.743-.725.897-.133.152-.267.171-.497.057-.23-.115-.968-.357-1.844-1.138-.682-.609-1.142-1.36-1.275-1.591-.134-.23-.014-.354.101-.469l.41-.479c.115-.133.152-.229.229-.382.076-.153.038-.287-.019-.401-.057-.115-.516-1.243-.706-1.701-.184-.445-.372-.384-.516-.391l-.441-.008c-.152 0-.401.057-.611.287-.21.23-.801.783-.801 1.911s.821 2.217.935 2.37c.115.153 1.615 2.466 3.914 3.457.547.236.974.377 1.307.483.55.174 1.051.15 1.446.091.44-.066 1.352-.553 1.543-1.087.191-.535.191-.993.134-1.087-.057-.115-.21-.171-.44-.286z" /></svg>
+                  Message Us
+                </a>
+              </div>
+            </div>
+
+            <div className="flex-1 relative w-full flex justify-center items-center">
+              <div className="relative w-full max-w-sm aspect-square bg-slate-800 rounded-3xl border border-slate-700 shadow-3xl overflow-hidden group">
+                <div className="absolute inset-0 bg-grid-pattern-overlay opacity-10"></div>
+                <div className="absolute inset-0 flex flex-col items-center justify-center gap-6 p-8">
+                  <motion.div
+                    animate={{ y: [0, -10, 0] }}
+                    transition={{ duration: 3, repeat: Infinity }}
+                    className="w-24 h-24 rounded-2xl bg-primary/20 flex items-center justify-center text-primary"
+                  >
+                    <span className="material-symbols-outlined text-5xl">support_agent</span>
+                  </motion.div>
+                  <div className="text-center space-y-2">
+                    <p className="text-white font-bold text-lg font-display">Always Online</p>
+                    <p className="text-slate-500 text-sm italic font-body">"Ready to scale your next campaign"</p>
+                  </div>
+                  <div className="flex gap-2">
+                    {[1, 2, 3].map(i => (
+                      <div key={i} className="w-10 h-1 rounded-full bg-primary/20"></div>
+                    ))}
+                  </div>
+                </div>
+                {/* Floating Badges */}
+                <motion.div
+                  animate={{ x: [0, 10, 0], y: [0, -5, 0] }}
+                  transition={{ duration: 4, repeat: Infinity }}
+                  className="absolute top-10 right-10 bg-emerald-500 text-white text-[10px] font-bold px-3 py-1 rounded-full shadow-lg font-display"
+                >
+                  ACTIVE NOW
+                </motion.div>
+                <motion.div
+                  animate={{ x: [0, -10, 0], y: [0, 5, 0] }}
+                  transition={{ duration: 5, repeat: Infinity }}
+                  className="absolute bottom-10 left-10 bg-primary/20 border border-primary/30 text-primary-light text-[10px] font-bold px-3 py-1 rounded-full shadow-lg font-display"
+                >
+                  +1 Message
+                </motion.div>
+              </div>
+            </div>
+          </motion.div>
+        </div>
+      </section>
     </div>
   );
 };
