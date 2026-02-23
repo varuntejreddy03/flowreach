@@ -237,90 +237,118 @@ const HomePage = () => {
         </div>
       </section>
 
-      {/* 24/7 Support Section */}
-      <section className="py-24 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
-          <motion.div
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="relative rounded-[3rem] bg-slate-900 overflow-hidden p-12 md:p-20 flex flex-col md:flex-row items-center gap-16"
-          >
-            {/* Background Decorations */}
-            <div className="absolute top-0 right-0 w-96 h-96 bg-primary/10 blur-[100px] rounded-full pointer-events-none"></div>
-            <div className="absolute bottom-0 left-0 w-64 h-64 bg-primary/5 blur-[80px] rounded-full pointer-events-none"></div>
+      {/* Premium 24/7 Support Section */}
+      <section className="py-32 relative overflow-hidden bg-white">
+        {/* Abstract Background Shapes */}
+        <div className="absolute top-1/2 left-0 -translate-y-1/2 w-[500px] h-[500px] bg-primary/5 blur-[120px] rounded-full pointer-events-none"></div>
+        <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-emerald-400/5 blur-[100px] rounded-full pointer-events-none"></div>
 
-            <div className="flex-1 space-y-8 relative z-10">
-              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/20 border border-primary/30 text-primary-light text-xs font-black uppercase tracking-[0.2em]">
-                24/7 Support
-              </div>
-              <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-white leading-[1.1] tracking-tight">
-                Round-the-Clock <br />
-                Support for Your <span className="text-primary">Business</span>
-              </h2>
-              <p className="text-slate-400 text-lg md:text-xl font-light leading-relaxed max-w-xl">
-                From early mornings to late nights, we're just a message or call away. Our 24/7 customer support ensures you get help whenever you need it.
-              </p>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="bg-slate-50 border border-slate-100 rounded-[3.5rem] p-8 md:p-16 lg:p-24 overflow-hidden relative shadow-2xl shadow-slate-200/50">
+            <div className="absolute inset-0 bg-grid-pattern-overlay opacity-20"></div>
 
-              <div className="flex flex-wrap gap-4 pt-4">
-                <button
-                  onClick={() => navigate('/contact')}
-                  className="group flex items-center gap-3 bg-white text-slate-900 px-8 py-4 rounded-2xl font-bold hover:bg-primary hover:text-white transition-all shadow-xl"
-                >
-                  Contact Us
-                  <span className="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
-                </button>
-                <a
-                  href="https://wa.me/919959194226"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-3 bg-[#25D366] text-white px-8 py-4 rounded-2xl font-bold hover:scale-105 transition-all shadow-xl shadow-green-500/20"
-                >
-                  <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24" width="20" height="20"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.588-5.946 0-6.556 5.332-11.888 11.888-11.888 3.176 0 6.161 1.237 8.404 3.48s3.481 5.229 3.481 8.404c0 3.176-1.237 6.161-3.48 8.404-2.244 2.244-5.229 3.481-8.404 3.481-1.936 0-3.834-.473-5.534-1.371l-5.854 1.5l.473-6.195zm5.534-1.428l.325.192c1.455.859 3.132 1.313 4.881 1.313 5.432 0 9.849-4.417 9.849-9.849 0-2.63-1.025-5.101-2.887-6.963s-4.333-2.887-6.962-2.887c-5.433 0-9.85 4.417-9.85 9.85 0 2.052.64 4.045 1.849 5.717l.217.301-.849 3.102 3.277-.839zm12.915-11.53c-.229-.115-1.352-.667-1.562-.743-.21-.076-.363-.115-.516.115-.152.23-.591.743-.725.897-.133.152-.267.171-.497.057-.23-.115-.968-.357-1.844-1.138-.682-.609-1.142-1.36-1.275-1.591-.134-.23-.014-.354.101-.469l.41-.479c.115-.133.152-.229.229-.382.076-.153.038-.287-.019-.401-.057-.115-.516-1.243-.706-1.701-.184-.445-.372-.384-.516-.391l-.441-.008c-.152 0-.401.057-.611.287-.21.23-.801.783-.801 1.911s.821 2.217.935 2.37c.115.153 1.615 2.466 3.914 3.457.547.236.974.377 1.307.483.55.174 1.051.15 1.446.091.44-.066 1.352-.553 1.543-1.087.191-.535.191-.993.134-1.087-.057-.115-.21-.171-.44-.286z" /></svg>
-                  Message Us
-                </a>
-              </div>
-            </div>
+            <div className="flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
+              {/* Text Content */}
+              <motion.div
+                initial={{ opacity: 0, x: -30 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                className="flex-[1.2] space-y-10 text-center lg:text-left"
+              >
+                <div className="inline-flex items-center gap-3 px-5 py-2 rounded-full bg-white border border-primary/20 shadow-sm">
+                  <span className="flex h-2 w-2 relative">
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+                    <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+                  </span>
+                  <span className="text-primary font-black uppercase tracking-[0.2em] text-[10px]">24/7 Support Active</span>
+                </div>
 
-            <div className="flex-1 relative w-full flex justify-center items-center">
-              <div className="relative w-full max-w-sm aspect-square bg-slate-800 rounded-3xl border border-slate-700 shadow-3xl overflow-hidden group">
-                <div className="absolute inset-0 bg-grid-pattern-overlay opacity-10"></div>
-                <div className="absolute inset-0 flex flex-col items-center justify-center gap-6 p-8">
-                  <motion.div
-                    animate={{ y: [0, -10, 0] }}
-                    transition={{ duration: 3, repeat: Infinity }}
-                    className="w-24 h-24 rounded-2xl bg-primary/20 flex items-center justify-center text-primary"
+                <div className="space-y-6">
+                  <h2 className="text-4xl md:text-6xl lg:text-7xl font-black text-slate-900 leading-[1] tracking-tight font-display">
+                    Round-the-Clock <br />
+                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-emerald-500">Support for Your Business</span>
+                  </h2>
+                  <p className="text-slate-600 text-lg md:text-xl font-light leading-relaxed max-w-2xl mx-auto lg:mx-0 font-body">
+                    From early mornings to late nights, we're just a message or call away. Our 24/7 customer support ensures you get help whenever you need it.
+                  </p>
+                </div>
+
+                <div className="flex flex-wrap justify-center lg:justify-start gap-5">
+                  <button
+                    onClick={() => navigate('/contact')}
+                    className="px-10 py-5 bg-slate-900 text-white rounded-2xl font-bold text-lg hover:bg-primary transition-all shadow-xl shadow-slate-900/10 flex items-center gap-3 group"
                   >
-                    <span className="material-symbols-outlined text-5xl">support_agent</span>
-                  </motion.div>
-                  <div className="text-center space-y-2">
-                    <p className="text-white font-bold text-lg font-display">Always Online</p>
-                    <p className="text-slate-500 text-sm italic font-body">"Ready to scale your next campaign"</p>
-                  </div>
-                  <div className="flex gap-2">
-                    {[1, 2, 3].map(i => (
-                      <div key={i} className="w-10 h-1 rounded-full bg-primary/20"></div>
-                    ))}
+                    Contact Us
+                    <span className="material-symbols-outlined group-hover:translate-x-1 transition-transform">trending_flat</span>
+                  </button>
+                  <a
+                    href="https://wa.me/919959194226"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-10 py-5 bg-[#25D366] text-white rounded-2xl font-bold text-lg hover:bg-[#20bd5a] hover:scale-105 transition-all shadow-xl shadow-green-500/20 flex items-center gap-3"
+                  >
+                    <svg className="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.588-5.946 0-6.556 5.332-11.888 11.888-11.888 3.176 0 6.161 1.237 8.404 3.48s3.481 5.229 3.481 8.404c0 3.176-1.237 6.161-3.48 8.404-2.244 2.244-5.229 3.481-8.404 3.481-1.936 0-3.834-.473-5.534-1.371l-5.854 1.5l.473-6.195zm5.534-1.428l.325.192c1.455.859 3.132 1.313 4.881 1.313 5.432 0 9.849-4.417 9.849-9.849 0-2.63-1.025-5.101-2.887-6.963s-4.333-2.887-6.962-2.887c-5.433 0-9.85 4.417-9.85 9.85 0 2.052.64 4.045 1.849 5.717l.217.301-.849 3.102 3.277-.839zm12.915-11.53c-.229-.115-1.352-.667-1.562-.743-.21-.076-.363-.115-.516.115-.152.23-.591.743-.725.897-.133.152-.267.171-.497.057-.23-.115-.968-.357-1.844-1.138-.682-.609-1.142-1.36-1.275-1.591-.134-.23-.014-.354.101-.469l.41-.479c.115-.133.152-.229.229-.382.076-.153.038-.287-.019-.401-.057-.115-.516-1.243-.706-1.701-.184-.445-.372-.384-.516-.391l-.441-.008c-.152 0-.401.057-.611.287-.21.23-.801.783-.801 1.911s.821 2.217.935 2.37c.115.153 1.615 2.466 3.914 3.457.547.236.974.377 1.307.483.55.174 1.051.15 1.446.091.44-.066 1.352-.553 1.543-1.087.191-.535.191-.993.134-1.087-.057-.115-.21-.171-.44-.286z" /></svg>
+                    Message Us
+                  </a>
+                </div>
+              </motion.div>
+
+              {/* Visual Mockup */}
+              <motion.div
+                initial={{ opacity: 0, scale: 0.9 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                className="flex-1 w-full relative"
+              >
+                <div className="relative bg-white rounded-[2.5rem] border border-slate-100 shadow-2xl p-10 overflow-hidden group">
+                  <div className="absolute top-0 right-0 w-32 h-32 bg-primary/10 blur-3xl rounded-full"></div>
+
+                  <div className="space-y-8 relative z-10">
+                    <div className="flex items-center gap-4 border-b border-slate-50 pb-6">
+                      <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
+                        <span className="material-symbols-outlined text-3xl font-bold">support_agent</span>
+                      </div>
+                      <div>
+                        <h4 className="font-black text-slate-900 font-display">Founder's Support</h4>
+                        <p className="text-xs text-slate-400 font-medium flex items-center gap-1.5">
+                          <span className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+                          Online & Ready
+                        </p>
+                      </div>
+                    </div>
+
+                    <div className="space-y-4">
+                      <div className="bg-slate-50 p-4 rounded-2xl rounded-tl-none max-w-[80%]">
+                        <p className="text-sm text-slate-600 font-body">"Hello! How can we help scale your business enquiries today?"</p>
+                      </div>
+                      <div className="bg-primary/5 p-4 rounded-2xl rounded-tr-none max-w-[85%] ml-auto">
+                        <p className="text-sm text-primary font-bold font-body">"Looking for a predictable lead system for my real estate project."</p>
+                      </div>
+                    </div>
+
+                    <div className="pt-4">
+                      <div className="h-[2px] w-full bg-slate-100 rounded-full relative overflow-hidden">
+                        <motion.div
+                          animate={{ x: ["-100%", "100%"] }}
+                          transition={{ duration: 2, repeat: Infinity, ease: "linear" }}
+                          className="absolute inset-0 bg-primary/30 w-1/3"
+                        ></motion.div>
+                      </div>
+                      <p className="text-[10px] text-slate-400 mt-3 text-center uppercase tracking-widest font-black">Performance Engineering in Progress</p>
+                    </div>
                   </div>
                 </div>
-                {/* Floating Badges */}
-                <motion.div
-                  animate={{ x: [0, 10, 0], y: [0, -5, 0] }}
-                  transition={{ duration: 4, repeat: Infinity }}
-                  className="absolute top-10 right-10 bg-emerald-500 text-white text-[10px] font-bold px-3 py-1 rounded-full shadow-lg font-display"
-                >
-                  ACTIVE NOW
-                </motion.div>
-                <motion.div
-                  animate={{ x: [0, -10, 0], y: [0, 5, 0] }}
-                  transition={{ duration: 5, repeat: Infinity }}
-                  className="absolute bottom-10 left-10 bg-primary/20 border border-primary/30 text-primary-light text-[10px] font-bold px-3 py-1 rounded-full shadow-lg font-display"
-                >
-                  +1 Message
-                </motion.div>
-              </div>
+
+                {/* Decorative Elements */}
+                <div className="absolute -top-6 -right-6 w-12 h-12 bg-white rounded-xl shadow-lg border border-slate-100 flex items-center justify-center text-primary animate-bounce">
+                  <span className="material-symbols-outlined font-bold">chat</span>
+                </div>
+                <div className="absolute -bottom-6 -left-6 w-16 h-16 bg-white rounded-2xl shadow-xl border border-slate-100 flex items-center justify-center text-emerald-500 rotate-12">
+                  <span className="material-symbols-outlined font-bold text-3xl">verified</span>
+                </div>
+              </motion.div>
             </div>
-          </motion.div>
+          </div>
         </div>
       </section>
     </div>
