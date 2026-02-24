@@ -273,7 +273,7 @@ const HomePage = () => {
       <section className="py-10 sm:py-12 bg-white border-t border-slate-100 relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-6 sm:mb-10">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-slate-900 mb-3 sm:mb-4">Industries We Dominate</h2>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-slate-900 mb-3 sm:mb-4">Industries We Specialise In</h2>
             <div className="w-16 h-1 bg-primary mx-auto rounded-full"></div>
           </div>
           <div className="grid grid-cols-3 sm:grid-cols-3 lg:grid-cols-6 gap-3 sm:gap-4">
