@@ -1,4 +1,4 @@
-# 🚀 FlowReach Marketing Solutions
+# 🚀 FlowReach Solutions
 
 **Structured Ad Systems for Ambitious Local Businesses.**
 
@@ -74,4 +74,4 @@ src/
 
 ---
 
-Built with Precision by **FlowReach Marketing Solutions**.
+Built with Precision by **FlowReach Solutions**.

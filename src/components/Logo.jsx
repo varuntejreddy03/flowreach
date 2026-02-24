@@ -31,7 +31,7 @@ const Logo = ({ className = "" }) => (
 
     <div className="flex flex-col -gap-1">
       <span className="text-xl font-bold font-display text-slate-900 leading-none tracking-tight">FlowReach</span>
-      <span className="text-[10px] uppercase font-bold font-display text-primary tracking-[0.2em] leading-none mt-1">Marketing Solutions</span>
+      <span className="text-[10px] uppercase font-bold font-display text-primary tracking-[0.2em] leading-none mt-1">Solutions</span>
     </div>
   </div>
 );

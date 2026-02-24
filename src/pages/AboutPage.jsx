@@ -22,7 +22,7 @@ const AboutPage = () => {
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-emerald-400">Precision & Results</span>
               </h1>
               <p className="text-slate-600 font-light leading-relaxed text-xs sm:text-sm mb-3 sm:mb-4">
-                FlowReach Marketing Solutions is a performance-driven digital marketing agency focused on helping local businesses generate consistent, high-quality enquiries through structured advertising systems.
+                FlowReach Solutions is a performance-driven digital marketing agency focused on helping local businesses generate consistent, high-quality enquiries through structured advertising systems.
               </p>
               <p className="text-slate-500 text-xs sm:text-sm leading-relaxed">
                 Founded by a marketing professional with international exposure in <strong className="text-slate-900 font-semibold">Singapore's competitive business environment</strong>, we bring global-standard strategy to local markets.

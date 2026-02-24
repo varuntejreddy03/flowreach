@@ -25,7 +25,7 @@ const Footer = () => (
             </li>
             <li className="flex items-start gap-3 text-slate-600 text-sm">
               <span className="material-symbols-outlined text-primary text-lg">location_on</span>
-              <span>Gachibowli, Hyderabad, Telangana</span>
+              <span>Gachibowli, <span className="text-primary font-semibold">Hyderabad</span>, Telangana</span>
             </li>
             <li className="flex items-start gap-3 text-slate-600 text-sm">
               <span className="material-symbols-outlined text-primary text-lg">location_on</span>
@@ -69,13 +69,16 @@ const Footer = () => (
         </div>
       </div>
 
-      <div className="border-t border-slate-100 pt-6 sm:pt-8 flex flex-col md:flex-row justify-between items-center gap-3 sm:gap-4">
-        <div className="text-slate-500 text-xs font-medium">
-          © 2026 FlowReach Marketing Solutions. All rights reserved.
+      <div className="border-t border-slate-100 pt-8 mt-8 flex flex-col items-center gap-4">
+        <div className="flex items-center gap-2 text-slate-600 text-sm font-medium">
+          Made with <span className="text-red-500 mx-1">❤️</span> by
+          <a href="https://staffarc.in" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 hover:opacity-80 transition-opacity">
+            <img src="https://www.staffarc.in/images/Staffarc-logo.png" alt="StaffArc" className="h-4 w-auto" />
+            <span className="text-[#FF6B00] font-bold">StaffArc</span>
+          </a>
         </div>
-        <div className="flex gap-6 text-xs text-slate-400 font-medium">
-          <a href="#" className="hover:text-primary transition-colors">Privacy Policy</a>
-          <a href="#" className="hover:text-primary transition-colors">Terms of Service</a>
+        <div className="text-slate-500 text-xs font-medium">
+          © 2026 <a href="https://flowreachsolutions.com" className="text-primary font-bold hover:underline transition-all">flowreachsolutions.com</a>. All rights reserved.
         </div>
       </div>
     </div>
