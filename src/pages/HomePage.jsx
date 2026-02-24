@@ -66,15 +66,15 @@ const HomePage = () => {
               variants={itemVariants}
               className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-black text-slate-900 tracking-tight leading-[0.95] mb-4 md:mb-6 max-w-5xl"
             >
-              Predictable <span className="relative inline-block text-transparent bg-clip-text bg-gradient-to-r from-primary to-emerald-400">
-                Revenue
+              From Brand Visibility to <br className="hidden md:block" /><span className="relative inline-block text-transparent bg-clip-text bg-gradient-to-r from-primary to-emerald-400">
+                Predictable Revenue
                 <motion.span
                   initial={{ width: 0 }}
                   animate={{ width: '100%' }}
                   transition={{ duration: 1, delay: 1 }}
                   className="absolute bottom-2 left-0 h-2 bg-primary/10 -z-10 rounded-full"
                 ></motion.span>
-              </span> <br className="hidden md:block" /> Pipelines
+              </span>
             </motion.h1>
 
             <motion.p
@@ -113,7 +113,7 @@ const HomePage = () => {
             >
               {[
                 { icon: "ads_click", value: "Meta + Google", label: "Ad Platforms" },
-                { icon: "location_on", value: "Hyderabad", label: "Local Market Specialists" },
+                { icon: "location_on", value: "Hyderabad & Singapore", label: "Market Specialists" },
                 { icon: "trending_up", value: "Performance", label: "Results-Only Focus" },
               ].map((card, i) => (
                 <motion.div
@@ -131,6 +131,21 @@ const HomePage = () => {
                     <p className="text-slate-400 text-[9px] sm:text-[10px] font-medium">{card.label}</p>
                   </div>
                 </motion.div>
+              ))}
+            </motion.div>
+
+            {/* Small Service Links */}
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 1.6 }}
+              className="flex flex-wrap justify-center gap-x-4 gap-y-1 mt-4 px-2"
+            >
+              {["Social Media Management", "Content & Reels", "Influencer Marketing", "Reporting & Strategy"].map((svc, i) => (
+                <Link key={i} to="/services" className="text-[10px] sm:text-xs text-slate-400 hover:text-primary transition-colors font-medium flex items-center gap-1.5">
+                  <span className="w-1 h-1 rounded-full bg-primary/50"></span>
+                  {svc}
+                </Link>
               ))}
             </motion.div>
           </motion.div>
@@ -215,46 +230,6 @@ const HomePage = () => {
                 </div>
               </motion.div>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Combined Stats + Counter Strip */}
-      <section className="py-8 sm:py-10 bg-white border-b border-slate-100">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-7 gap-4 sm:gap-6 items-center">
-            {[
-              { value: "500+", label: "Leads Generated", icon: "group" },
-              { value: "50+", label: "Clients Served", icon: "handshake" },
-              { value: "10+", label: "Industries", icon: "category" },
-              { value: "24/7", label: "Support", icon: "support_agent" },
-            ].map((stat, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, y: 15 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ delay: i * 0.08 }}
-                viewport={{ once: true }}
-                className="text-center py-4"
-              >
-                <p className="text-xl sm:text-2xl md:text-3xl font-black text-slate-900 tracking-tight font-display">{stat.value}</p>
-                <p className="text-slate-400 text-[10px] font-bold uppercase tracking-widest mt-1">{stat.label}</p>
-              </motion.div>
-            ))}
-            <div className="hidden lg:block col-span-3">
-              <div className="grid grid-cols-3 gap-4">
-                {[
-                  { label: "Performance-First", sub: "No Vanity Metrics" },
-                  { label: "AI-Driven", sub: "Real-time Scaling" },
-                  { label: "Global Strategy", sub: "Singapore Standard" },
-                ].map((item, i) => (
-                  <div key={i} className="text-center border-l border-slate-100 pl-4">
-                    <p className="text-sm font-black text-slate-900">{item.label}</p>
-                    <p className="text-[10px] text-slate-400 uppercase tracking-wider">{item.sub}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
           </div>
         </div>
       </section>
@@ -480,35 +455,6 @@ const HomePage = () => {
         </div>
       </section>
 
-      {/* Client Testimonial / Social Proof */}
-      <section className="py-10 sm:py-12 bg-slate-50 border-t border-slate-100">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center"
-          >
-            <div className="inline-flex items-center gap-0.5 mb-6">
-              {[1, 2, 3, 4, 5].map((s) => (
-                <span key={s} className="material-symbols-outlined text-amber-400 text-xl">star</span>
-              ))}
-            </div>
-            <blockquote className="text-base sm:text-lg md:text-2xl font-light text-slate-700 leading-relaxed mb-4 sm:mb-6 italic px-2">
-              "FlowReach completely transformed our digital presence. Within 2 months, we went from inconsistent social media to a full lead generation system that brings qualified enquiries every week."
-            </blockquote>
-            <div className="flex items-center justify-center gap-3">
-              <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary">
-                <span className="material-symbols-outlined text-lg">person</span>
-              </div>
-              <div className="text-left">
-                <p className="font-black text-slate-900 text-sm">Education Consultant</p>
-                <p className="text-xs text-slate-400">Hyderabad, India</p>
-              </div>
-            </div>
-          </motion.div>
-        </div>
-      </section>
 
       {/* FAQ Section */}
       <section className="py-10 sm:py-14 bg-white border-t border-slate-100">

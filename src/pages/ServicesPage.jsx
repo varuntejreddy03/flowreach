@@ -116,6 +116,45 @@ const ServicesPage = () => {
         "Clear ROI analysis",
         "Strategy review call"
       ]
+    },
+    {
+      id: "06",
+      title: "Content Creation & Video Strategy",
+      subtitle: "Brand Presence & Paid Support",
+      problem: "Generic Content",
+      problemDesc: "Posting without a strategy weakens your brand and fails to support paid advertising performance.",
+      solution: "Strategic Content Systems",
+      solutionDesc: "We create strategic, conversion-focused content designed to strengthen your brand presence and support paid advertising performance. Our content approach is built around visibility, engagement, and enquiry generation — not just aesthetics.",
+      tag: "CONTENT",
+      icon: "videocam",
+      points: [
+        "Reels & Short-Form Video Strategy",
+        "Script & Concept Planning",
+        "Promotional Campaign Content",
+        "Platform-Optimised Creative Formats",
+        "Ad Creative Direction",
+        "Content Calendar Alignment"
+      ],
+      footer: "Every piece of content is aligned with your growth objectives and promotion strategy."
+    },
+    {
+      id: "07",
+      title: "Influencer & Promotion Campaigns",
+      subtitle: "Credibility & Reach",
+      problem: "Low Brand Trust",
+      problemDesc: "Without structured influencer collaborations, your brand misses out on credibility and targeted reach.",
+      solution: "Strategic Partnerships",
+      solutionDesc: "We design structured influencer collaborations to increase brand credibility, targeted reach, and campaign effectiveness. Our approach focuses on strategic partnerships that align with your audience and business goals.",
+      tag: "INFLUENCER",
+      icon: "group",
+      points: [
+        "Influencer Identification & Shortlisting",
+        "Campaign Strategy & Coordination",
+        "Reel & Story Collaborations",
+        "Promotion Timeline Planning",
+        "Performance Monitoring & Reporting"
+      ],
+      footer: "We ensure influencer efforts support your broader advertising and brand growth strategy."
     }
   ];
 
@@ -242,7 +281,7 @@ const ServicesPage = () => {
             className="flex flex-wrap justify-center gap-2 sm:gap-3"
           >
             {[
-              { icon: "grid_view", label: "5 Core Services" },
+              { icon: "grid_view", label: "7 Core Services" },
               { icon: "ads_click", label: "Meta & Google Ads" },
               { icon: "psychology", label: "AI-Driven Campaigns" },
               { icon: "location_on", label: "Hyderabad Focused" },
@@ -349,7 +388,7 @@ const ServicesPage = () => {
 
                     <h4 className="text-slate-900 font-black text-base mb-5 flex items-center gap-3">
                       <span className="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
-                        {service.id === "01" ? "1" : service.id === "02" ? "2" : service.id === "03" ? "3" : service.id === "04" ? "4" : "5"}
+                        {parseInt(service.id)}
                       </span>
                       Plan Deliverables
                     </h4>
@@ -392,6 +431,12 @@ const ServicesPage = () => {
                           </li>
                         ))}
                       </ul>
+                    )}
+
+                    {service.footer && (
+                      <p className="mt-4 text-slate-500 text-xs sm:text-sm italic leading-relaxed border-l-2 border-primary/30 pl-3">
+                        {service.footer}
+                      </p>
                     )}
 
                     <button onClick={() => navigate('/contact')} className="mt-6 sm:mt-8 w-full py-3.5 sm:py-4 rounded-xl bg-primary text-white text-sm font-bold shadow-lg hover:bg-primary-dark transition-all">

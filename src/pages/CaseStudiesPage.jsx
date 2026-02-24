@@ -22,7 +22,7 @@ const caseStudies = [
     results: [
       { metric: "60%", label: "Cost Reduction" },
       { metric: "4x", label: "Qualified Visits" },
-      { metric: "₹12L+", label: "Monthly Pipeline" },
+      { metric: "80%", label: "Pipeline Growth" },
     ],
     quote: "We went from random walk-ins to qualified, intent-driven buyers within weeks.",
   },
@@ -33,7 +33,7 @@ const caseStudies = [
     solution: "Offer-based Meta campaigns with lead magnet funnels (free trial passes), automated follow-up sequences, and location-based targeting.",
     results: [
       { metric: "85+", label: "New Members/Month" },
-      { metric: "₹120", label: "Avg. Cost Per Lead" },
+      { metric: "65%", label: "Lower Cost Per Lead" },
       { metric: "30%", label: "Retention Boost" },
     ],
     quote: "Every month now feels like January — consistent signups all year round.",
