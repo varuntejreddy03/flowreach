@@ -134,17 +134,26 @@ const HomePage = () => {
               ))}
             </motion.div>
 
-            {/* Small Service Links */}
+            {/* Service Links */}
             <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 1.6 }}
-              className="flex flex-wrap justify-center gap-x-4 gap-y-1 mt-4 px-2"
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 1.6, duration: 0.6 }}
+              className="flex flex-wrap justify-center gap-2 sm:gap-3 mt-5 px-2"
             >
-              {["Social Media Management", "Content & Reels", "Influencer Marketing", "Reporting & Strategy"].map((svc, i) => (
-                <Link key={i} to="/services" className="text-[10px] sm:text-xs text-slate-400 hover:text-primary transition-colors font-medium flex items-center gap-1.5">
-                  <span className="w-1 h-1 rounded-full bg-primary/50"></span>
-                  {svc}
+              {[
+                { label: "Social Media Management", icon: "share" },
+                { label: "Content & Reels", icon: "videocam" },
+                { label: "Influencer Marketing", icon: "group" },
+                { label: "Reporting & Strategy", icon: "monitoring" },
+              ].map((svc, i) => (
+                <Link
+                  key={i}
+                  to="/services"
+                  className="group flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full bg-white/70 backdrop-blur-sm border border-slate-200/80 hover:border-primary/40 hover:bg-primary/5 transition-all duration-300 shadow-sm hover:shadow-md"
+                >
+                  <span className="material-symbols-outlined text-primary text-sm">{svc.icon}</span>
+                  <span className="text-[10px] sm:text-xs font-bold text-slate-600 group-hover:text-primary transition-colors">{svc.label}</span>
                 </Link>
               ))}
             </motion.div>

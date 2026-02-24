@@ -473,7 +473,7 @@ const ServicesPage = () => {
               transition={{ delay: 0.1 }}
               className="text-3xl md:text-4xl font-black text-slate-900 mb-4"
             >
-              Our Growth <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-emerald-500">Packages</span>
+              Our Branding <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-emerald-500">Packages</span>
             </motion.h2>
           </div>
 
@@ -540,6 +540,178 @@ const ServicesPage = () => {
                 </div>
               </motion.div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Social Media Growth Strategy */}
+      <section className="py-14 bg-slate-50 relative overflow-hidden border-t border-slate-100">
+        <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-primary/5 blur-[120px] rounded-full pointer-events-none"></div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="text-center mb-10 sm:mb-14">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-primary/30 bg-primary/10 text-primary text-xs font-black uppercase tracking-[0.2em] mb-6"
+            >
+              <span className="material-symbols-outlined text-sm">auto_awesome</span>
+              Brand Growth
+            </motion.div>
+            <motion.h2
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.1 }}
+              className="text-3xl md:text-4xl font-black text-slate-900 mb-4"
+            >
+              Our Branding <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-emerald-500">Packages</span>
+            </motion.h2>
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.2 }}
+              className="text-slate-500 text-sm max-w-2xl mx-auto"
+            >
+              Beyond advertising — we build complete content and influencer ecosystems that amplify your brand and support paid campaign performance.
+            </motion.p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-6 sm:gap-8">
+            {/* Content Creation & Video Strategy */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="bg-white border border-slate-100 rounded-xl sm:rounded-2xl p-5 sm:p-8 shadow-lg hover:border-primary/20 transition-all duration-500 relative overflow-hidden group"
+            >
+              <div className="absolute top-0 right-0 p-6 opacity-[0.03] group-hover:opacity-[0.08] transition-opacity">
+                <span className="material-symbols-outlined text-[10rem]">videocam</span>
+              </div>
+              <div className="relative z-10">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary">
+                    <span className="material-symbols-outlined text-2xl">videocam</span>
+                  </div>
+                  <div>
+                    <h3 className="text-lg sm:text-xl font-black text-slate-900">Content Creation & Video Strategy</h3>
+                    <span className="text-[10px] font-bold text-primary uppercase tracking-widest">Brand Presence & Paid Support</span>
+                  </div>
+                </div>
+
+                <p className="text-slate-600 text-sm leading-relaxed mb-2">
+                  We create <strong className="text-slate-900">strategic, conversion-focused content</strong> designed to strengthen your brand presence and support paid advertising performance.
+                </p>
+                <p className="text-slate-500 text-sm leading-relaxed mb-6">
+                  Our content approach is built around <strong className="text-slate-700">visibility, engagement, and enquiry generation</strong> — not just aesthetics.
+                </p>
+
+                <h4 className="text-slate-900 font-black text-[10px] uppercase tracking-[0.2em] mb-4 flex items-center gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                  Includes
+                </h4>
+                <ul className="space-y-3 mb-6">
+                  {[
+                    "Reels & Short-Form Video Strategy",
+                    "Script & Concept Planning",
+                    "Promotional Campaign Content",
+                    "Platform-Optimised Creative Formats",
+                    "Ad Creative Direction",
+                    "Content Calendar Alignment"
+                  ].map((item, i) => (
+                    <li key={i} className="flex items-start gap-3 text-slate-600 text-sm leading-tight font-medium">
+                      <span className="material-symbols-outlined text-primary text-lg mt-[-2px]">check_circle</span>
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+
+                <p className="text-slate-500 text-xs sm:text-sm italic leading-relaxed border-l-2 border-primary/30 pl-3 mb-6">
+                  Every piece of content is aligned with your growth objectives and promotion strategy.
+                </p>
+
+                <div className="bg-slate-50 border border-slate-100 rounded-2xl p-5 text-center space-y-2">
+                  <p className="text-slate-500 text-[11px] leading-relaxed">Interested in this plan? Contact us for a <span className="text-primary font-bold">custom quote</span> tailored to your business.</p>
+                  <a
+                    href={`https://wa.me/919959194226?text=${encodeURIComponent("Hi FlowReach! I'm interested in the Content Creation & Video Strategy package. Can you share more details?")}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 text-[11px] font-black text-[#25D366] hover:underline"
+                  >
+                    <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.414 0 .018 5.393 0 12.03c0 2.122.554 4.197 1.604 6.013l-1.704 6.223 6.365-1.67a11.813 11.813 0 005.77 1.503h.005c6.636 0 12.032-5.393 12.035-12.032a11.772 11.772 0 00-3.411-8.506z" /></svg>
+                    WhatsApp Us
+                  </a>
+                </div>
+              </div>
+            </motion.div>
+
+            {/* Influencer & Promotion Campaigns */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.1 }}
+              className="bg-white border border-slate-100 rounded-xl sm:rounded-2xl p-5 sm:p-8 shadow-lg hover:border-primary/20 transition-all duration-500 relative overflow-hidden group"
+            >
+              <div className="absolute top-0 right-0 p-6 opacity-[0.03] group-hover:opacity-[0.08] transition-opacity">
+                <span className="material-symbols-outlined text-[10rem]">group</span>
+              </div>
+              <div className="relative z-10">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary">
+                    <span className="material-symbols-outlined text-2xl">group</span>
+                  </div>
+                  <div>
+                    <h3 className="text-lg sm:text-xl font-black text-slate-900">Influencer & Promotion Campaigns</h3>
+                    <span className="text-[10px] font-bold text-primary uppercase tracking-widest">Credibility & Reach</span>
+                  </div>
+                </div>
+
+                <p className="text-slate-600 text-sm leading-relaxed mb-2">
+                  We design <strong className="text-slate-900">structured influencer collaborations</strong> to increase brand credibility, targeted reach, and campaign effectiveness.
+                </p>
+                <p className="text-slate-500 text-sm leading-relaxed mb-6">
+                  Our approach focuses on <strong className="text-slate-700">strategic partnerships</strong> that align with your audience and business goals.
+                </p>
+
+                <h4 className="text-slate-900 font-black text-[10px] uppercase tracking-[0.2em] mb-4 flex items-center gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                  Includes
+                </h4>
+                <ul className="space-y-3 mb-6">
+                  {[
+                    "Influencer Identification & Shortlisting",
+                    "Campaign Strategy & Coordination",
+                    "Reel & Story Collaborations",
+                    "Promotion Timeline Planning",
+                    "Performance Monitoring & Reporting"
+                  ].map((item, i) => (
+                    <li key={i} className="flex items-start gap-3 text-slate-600 text-sm leading-tight font-medium">
+                      <span className="material-symbols-outlined text-primary text-lg mt-[-2px]">check_circle</span>
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+
+                <p className="text-slate-500 text-xs sm:text-sm italic leading-relaxed border-l-2 border-primary/30 pl-3 mb-6">
+                  We ensure influencer efforts support your broader advertising and brand growth strategy.
+                </p>
+
+                <div className="bg-slate-50 border border-slate-100 rounded-2xl p-5 text-center space-y-2">
+                  <p className="text-slate-500 text-[11px] leading-relaxed">Interested in this plan? Contact us for a <span className="text-primary font-bold">custom quote</span> tailored to your business.</p>
+                  <a
+                    href={`https://wa.me/919959194226?text=${encodeURIComponent("Hi FlowReach! I'm interested in the Influencer & Promotion Campaigns package. Can you share more details?")}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 text-[11px] font-black text-[#25D366] hover:underline"
+                  >
+                    <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.414 0 .018 5.393 0 12.03c0 2.122.554 4.197 1.604 6.013l-1.704 6.223 6.365-1.67a11.813 11.813 0 005.77 1.503h.005c6.636 0 12.032-5.393 12.035-12.032a11.772 11.772 0 00-3.411-8.506z" /></svg>
+                    WhatsApp Us
+                  </a>
+                </div>
+              </div>
+            </motion.div>
           </div>
         </div>
       </section>
