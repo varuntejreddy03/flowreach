@@ -171,8 +171,7 @@ const ServicesPage = () => {
         "Professional Caption Writing",
         "Hashtag & Reach Strategy",
         "Basic Profile Optimisation",
-        "Monthly Performance Report",
-        "WhatsApp"
+        "Monthly Performance Report"
       ],
       positioning: "Build visibility, credibility, and consistent brand presence."
     },
@@ -306,7 +305,7 @@ const ServicesPage = () => {
       <section className="bg-slate-50 py-10 border-y border-slate-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-6">
-            <p className="text-slate-500 text-xs uppercase tracking-[0.3em] font-bold">FlowReach vs. Generic Agencies</p>
+            <p className="text-slate-500 text-xs uppercase tracking-[0.3em] font-bold">flowreach Marketing Solutions vs. Generic Agencies</p>
           </div>
           <div className="grid sm:grid-cols-3 gap-4 sm:gap-6">
             {[
@@ -528,7 +527,7 @@ const ServicesPage = () => {
                   <div className="bg-slate-50 border border-slate-100 rounded-2xl p-5 text-center space-y-2">
                     <p className="text-slate-500 text-[11px] leading-relaxed">Interested in this plan? Contact us for a <span className="text-primary font-bold">custom quote</span> tailored to your business.</p>
                     <a
-                      href={`https://wa.me/919959194226?text=${encodeURIComponent(`Hi FlowReach! I'm interested in the ${pkg.title} package. Can you share more details?`)}`}
+                      href={`https://wa.me/919959194226?text=${encodeURIComponent(`Hi flowreach Marketing Solutions! I'm interested in the ${pkg.title} package. Can you share more details?`)}`}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center gap-2 text-[11px] font-black text-[#25D366] hover:underline"
@@ -634,7 +633,7 @@ const ServicesPage = () => {
                 <div className="bg-slate-50 border border-slate-100 rounded-2xl p-5 text-center space-y-2">
                   <p className="text-slate-500 text-[11px] leading-relaxed">Interested in this plan? Contact us for a <span className="text-primary font-bold">custom quote</span> tailored to your business.</p>
                   <a
-                    href={`https://wa.me/919959194226?text=${encodeURIComponent("Hi FlowReach! I'm interested in the Content Creation & Video Strategy package. Can you share more details?")}`}
+                    href={`https://wa.me/919959194226?text=${encodeURIComponent("Hi flowreach Marketing Solutions! I'm interested in the Content Creation & Video Strategy package. Can you share more details?")}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 text-[11px] font-black text-[#25D366] hover:underline"
@@ -701,7 +700,7 @@ const ServicesPage = () => {
                 <div className="bg-slate-50 border border-slate-100 rounded-2xl p-5 text-center space-y-2">
                   <p className="text-slate-500 text-[11px] leading-relaxed">Interested in this plan? Contact us for a <span className="text-primary font-bold">custom quote</span> tailored to your business.</p>
                   <a
-                    href={`https://wa.me/919959194226?text=${encodeURIComponent("Hi FlowReach! I'm interested in the Influencer & Promotion Campaigns package. Can you share more details?")}`}
+                    href={`https://wa.me/919959194226?text=${encodeURIComponent("Hi flowreach Marketing Solutions! I'm interested in the Influencer & Promotion Campaigns package. Can you share more details?")}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 text-[11px] font-black text-[#25D366] hover:underline"

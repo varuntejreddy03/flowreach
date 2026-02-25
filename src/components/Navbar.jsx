@@ -154,8 +154,8 @@ const Navbar = () => {
                   <motion.div key={link.path} variants={linkVariants}>
                     <Link
                       className={`flex items-center gap-4 px-4 py-3.5 rounded-2xl text-[15px] font-semibold transition-all active:scale-[0.98] ${isActive(link.path)
-                          ? 'bg-primary/10 text-primary'
-                          : 'text-slate-700 active:bg-slate-50'
+                        ? 'bg-primary/10 text-primary'
+                        : 'text-slate-700 active:bg-slate-50'
                         }`}
                       to={link.path}
                       onClick={() => setIsOpen(false)}
@@ -186,7 +186,7 @@ const Navbar = () => {
 
                 {/* WhatsApp Quick Action */}
                 <a
-                  href={`https://wa.me/919959194226?text=${encodeURIComponent("Hello FlowReach! I'm interested in your marketing services.")}`}
+                  href={`https://wa.me/919959194226?text=${encodeURIComponent("Hello flowreach Marketing Solutions! I'm interested in your marketing services.")}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full flex items-center justify-center gap-2 px-4 py-3 rounded-2xl bg-[#25D366]/10 text-[#25D366] font-semibold text-sm transition-all active:scale-[0.98]"

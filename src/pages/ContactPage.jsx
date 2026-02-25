@@ -19,7 +19,7 @@ const ContactPage = () => {
     e.preventDefault();
 
     // Construct WhatsApp message
-    const message = `Hello FlowReach team! 🚀\n\nI'm interested in a strategy session.\n\n*Details:*\n👤 Name: ${formData.name}\n🏢 Company: ${formData.company}\n📧 Email: ${formData.email}\n🎯 Industry: ${formData.industry}\n\nLooking forward to hearing from you!`;
+    const message = `Hello flowreach Marketing Solutions team! 🚀\n\nI'm interested in a strategy session.\n\n*Details:*\n👤 Name: ${formData.name}\n🏢 Company: ${formData.company}\n📧 Email: ${formData.email}\n🎯 Industry: ${formData.industry}\n\nLooking forward to hearing from you!`;
     const encodedMessage = encodeURIComponent(message);
     const whatsappUrl = `https://wa.me/919959194226?text=${encodedMessage}`;
 
@@ -46,7 +46,7 @@ const ContactPage = () => {
                   High-Performance Lead Gen
                 </span>
                 <h1 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl lg:text-5xl xl:text-6xl mb-4 sm:mb-6">
-                  Scale Your Growth with FlowReach
+                  Scale Your Growth with flowreach Marketing Solutions
                 </h1>
                 <p className="text-sm sm:text-lg leading-7 sm:leading-8 text-slate-600 font-light">
                   Specializing in premium lead generation for Restaurants, Real Estate, and Gyms in Hyderabad. Ready to transform your strategy into revenue?
@@ -60,8 +60,10 @@ const ContactPage = () => {
                     animate={{ opacity: 1, scale: 1 }}
                     className="py-12 text-center"
                   >
-                    <div className="w-16 h-16 bg-green-100 text-primary rounded-full flex items-center justify-center mx-auto mb-6">
-                      <span className="material-symbols-outlined text-4xl">check_circle</span>
+                    <div className="w-16 h-16 bg-[#25D366]/10 text-[#25D366] rounded-full flex items-center justify-center mx-auto mb-6">
+                      <svg className="w-8 h-8 fill-current" viewBox="0 0 24 24">
+                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.414 0 .018 5.393 0 12.03c0 2.122.554 4.197 1.604 6.013l-1.704 6.223 6.365-1.67a11.813 11.813 0 005.77 1.503h.005c6.636 0 12.032-5.393 12.035-12.032a11.772 11.772 0 00-3.411-8.506z" />
+                      </svg>
                     </div>
                     <h3 className="text-2xl font-bold text-slate-900 mb-2">Redirecting to WhatsApp...</h3>
                     <p className="text-slate-600">Our performance team is ready to chat. Opening your message now.</p>
@@ -108,6 +110,17 @@ const ContactPage = () => {
               className="flex flex-col gap-6 lg:pt-16 order-1 lg:order-2"
             >
               <div className="grid grid-cols-1 gap-4">
+                <a className="group flex items-center gap-3 sm:gap-4 rounded-xl border border-slate-100 bg-slate-50 p-4 sm:p-5 hover:border-[#25D366]/50 hover:bg-white hover:shadow-md transition-all" href="https://wa.me/919959194226">
+                  <div className="flex h-10 w-10 sm:h-12 sm:w-12 flex-none items-center justify-center rounded-lg bg-[#25D366]/10 group-hover:bg-[#25D366]/20 transition-colors">
+                    <svg className="w-5 h-5 fill-[#25D366]" viewBox="0 0 24 24">
+                      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.414 0 .018 5.393 0 12.03c0 2.122.554 4.197 1.604 6.013l-1.704 6.223 6.365-1.67a11.813 11.813 0 005.77 1.503h.005c6.636 0 12.032-5.393 12.035-12.032a11.772 11.772 0 00-3.411-8.506z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <p className="text-sm font-semibold text-slate-500">Fast Response</p>
+                    <p className="text-lg sm:text-lg font-bold text-slate-900 group-hover:text-[#25D366] transition-colors">Chat on WhatsApp</p>
+                  </div>
+                </a>
                 <a className="group flex items-center gap-3 sm:gap-4 rounded-xl border border-slate-100 bg-slate-50 p-4 sm:p-5 hover:border-primary/50 hover:bg-white hover:shadow-md transition-all" href="tel:9959194226">
                   <div className="flex h-10 w-10 sm:h-12 sm:w-12 flex-none items-center justify-center rounded-lg bg-primary/10 group-hover:bg-primary/20 transition-colors">
                     <span className="material-symbols-outlined text-primary">call</span>

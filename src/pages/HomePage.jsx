@@ -392,7 +392,7 @@ const HomePage = () => {
                     <span className="material-symbols-outlined group-hover:translate-x-1 transition-transform">trending_flat</span>
                   </button>
                   <a
-                    href={`https://wa.me/919959194226?text=${encodeURIComponent("Hello FlowReach! 🚀 I'm interested in your 24/7 support and lead systems. Can we talk?")}`}
+                    href={`https://wa.me/919959194226?text=${encodeURIComponent("Hello flowreach Marketing Solutions! 🚀 I'm interested in your 24/7 support and lead systems. Can we talk?")}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="px-5 py-3 bg-[#25D366] text-white rounded-xl font-bold text-sm hover:bg-[#20bd5a] transition-all shadow-lg shadow-green-500/20 flex items-center gap-2 w-full sm:w-auto justify-center"
@@ -478,7 +478,7 @@ const HomePage = () => {
               { q: "How quickly can I see results?", a: "Most clients begin seeing qualified leads within 2-4 weeks of campaign launch. We focus on high-intent enquiries, not just impressions or clicks." },
               { q: "Do you manage our social media too?", a: "Yes! We offer complete Social Media Management including content strategy, creative design, scheduling, engagement management, and location-based ad targeting." },
               { q: "What platforms do you advertise on?", a: "We run performance campaigns on Meta (Facebook & Instagram), Google Ads, and YouTube. Our AI-powered optimization ensures every rupee is spent efficiently." },
-              { q: "What makes FlowReach different from other agencies?", a: "We focus on enquiry generation, not vanity metrics. Every campaign is structured around driving real conversations and conversions, backed by AI-driven optimisation and Singapore-standard strategy." },
+              { q: "What makes flowreach Marketing Solutions different from other agencies?", a: "We focus on enquiry generation, not vanity metrics. Every campaign is structured around driving real conversations and conversions, backed by AI-driven optimisation and Singapore-standard strategy." },
               { q: "Is there a minimum contract period?", a: "We offer flexible month-to-month packages. No long-term lock-ins — our results speak for themselves. Custom plans are available based on your business needs." }
             ].map((faq, idx) => (
               <motion.details

@@ -78,7 +78,7 @@ const Footer = () => (
           </a>
         </div>
         <div className="text-slate-500 text-xs font-medium">
-          © 2026 <a href="https://flowreachsolutions.com" className="text-primary font-bold hover:underline transition-all">flowreachsolutions.com</a>. All rights reserved.
+          © 2026 <a href="https://flowreachsolutions.com" className="text-primary font-bold hover:underline transition-all">flowreach Marketing Solutions</a>. All rights reserved.
         </div>
       </div>
     </div>

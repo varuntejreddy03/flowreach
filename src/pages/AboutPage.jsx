@@ -22,7 +22,7 @@ const AboutPage = () => {
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-emerald-400">Precision & Results</span>
               </h1>
               <p className="text-slate-600 font-light leading-relaxed text-xs sm:text-sm mb-3 sm:mb-4">
-                FlowReach Solutions is a performance-driven digital marketing agency focused on helping local businesses generate consistent, high-quality enquiries through structured advertising systems.
+                flowreach Marketing Solutions is a performance-driven digital marketing agency focused on helping local businesses generate consistent, high-quality enquiries through structured advertising systems.
               </p>
               <p className="text-slate-500 text-xs sm:text-sm leading-relaxed">
                 Founded by a marketing professional with international exposure in <strong className="text-slate-900 font-semibold">Singapore's competitive business environment</strong>, we bring global-standard strategy to local markets.
@@ -60,7 +60,7 @@ const AboutPage = () => {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
                 <div className="absolute bottom-3 sm:bottom-4 left-3 sm:left-4 right-3 sm:right-4 p-3 sm:p-5 bg-white/95 backdrop-blur-md border border-white/20 rounded-lg sm:rounded-xl shadow-lg">
-                  <p className="text-slate-900 font-bold italic leading-relaxed text-xs sm:text-sm">"At FlowReach, marketing is not about impressions or likes — it is about real business outcomes."</p>
+                  <p className="text-slate-900 font-bold italic leading-relaxed text-xs sm:text-sm">"At flowreach Marketing Solutions, marketing is not about impressions or likes — it is about real business outcomes."</p>
                 </div>
               </div>
             </motion.div>
@@ -132,7 +132,7 @@ const AboutPage = () => {
                 Every campaign is built with a results-first mindset, ensuring businesses see measurable growth through enquiries, calls, memberships, bookings, and site visits.
               </p>
               <p className="text-slate-500 text-xs sm:text-sm leading-relaxed">
-                FlowReach exists to be a long-term growth partner for ambitious local businesses ready to move from random marketing efforts to structured, predictable growth systems.
+                flowreach Marketing Solutions exists to be a long-term growth partner for ambitious local businesses ready to move from random marketing efforts to structured, predictable growth systems.
               </p>
               <button
                 onClick={() => navigate('/contact')}
@@ -173,7 +173,7 @@ const AboutPage = () => {
                 ))}
               </div>
               <p className="text-slate-500 text-xs leading-relaxed italic border-l-4 border-primary/20 pl-4">
-                "That level of rigour is now the standard at FlowReach — no vanity metrics, no guesswork, just structured performance systems that deliver results."
+                "That level of rigour is now the standard at flowreach Marketing Solutions — no vanity metrics, no guesswork, just structured performance systems that deliver results."
               </p>
             </div>
             <motion.div
@@ -211,7 +211,7 @@ const AboutPage = () => {
       <section className="py-10 sm:py-12 bg-slate-50 border-t border-slate-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-6 sm:mb-8">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-slate-900 mb-3">Why Businesses Trust FlowReach</h2>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-slate-900 mb-3">Why Businesses Trust flowreach Marketing Solutions</h2>
           </div>
           <div className="grid sm:grid-cols-3 gap-3 sm:gap-4">
             {[
@@ -241,7 +241,7 @@ const AboutPage = () => {
       {/* CTA */}
       <section className="py-10 sm:py-14 bg-white border-t border-slate-100">
         <div className="max-w-4xl mx-auto px-4 text-center">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-slate-900 mb-3 sm:mb-4">Ready to Partner with FlowReach?</h2>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-slate-900 mb-3 sm:mb-4">Ready to Partner with flowreach Marketing Solutions?</h2>
           <p className="text-slate-500 text-xs sm:text-sm mb-6 sm:mb-8 max-w-2xl mx-auto px-2">
             Whether you're just starting out or looking to scale, we have a structured growth system designed for your industry.
           </p>

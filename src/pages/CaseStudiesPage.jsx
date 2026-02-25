@@ -12,7 +12,7 @@ const caseStudies = [
       { metric: "45%", label: "Lower CPL" },
       { metric: "2 Weeks", label: "To First Results" },
     ],
-    quote: "FlowReach turned our random posting into a predictable enquiry machine.",
+    quote: "flowreach Marketing Solutions turned our random posting into a predictable enquiry machine.",
   },
   {
     industry: "Real Estate Developer",
@@ -48,7 +48,7 @@ const caseStudies = [
       { metric: "40%", label: "Online Order Growth" },
       { metric: "10K+", label: "Monthly Reach" },
     ],
-    quote: "Our tables are full on weekdays now — something we never achieved before FlowReach.",
+    quote: "Our tables are full on weekdays now — something we never achieved before flowreach Marketing Solutions.",
   },
 ];
 
@@ -227,7 +227,7 @@ const CaseStudiesPage = () => {
               Get Your Free Audit
             </button>
             <a
-              href={`https://wa.me/919959194226?text=${encodeURIComponent("Hi FlowReach! I saw your case studies and I'm interested in getting similar results for my business.")}`}
+              href={`https://wa.me/919959194226?text=${encodeURIComponent("Hi flowreach Marketing Solutions! I saw your case studies and I'm interested in getting similar results for my business.")}`}
               target="_blank"
               rel="noopener noreferrer"
               className="px-6 sm:px-8 py-3.5 sm:py-4 bg-[#25D366] text-white rounded-xl font-bold text-sm hover:bg-[#20bd5a] transition-all shadow-lg shadow-green-500/20 flex items-center justify-center gap-2 w-full sm:w-auto"
