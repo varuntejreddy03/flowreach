@@ -1,5 +1,6 @@
 import Logo from './Logo';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 const Footer = () => (
   <footer className="bg-white border-t border-slate-100 py-10 sm:py-16">
@@ -70,6 +71,13 @@ const Footer = () => (
       </div>
 
       <div className="border-t border-slate-100 pt-8 mt-8 flex flex-col items-center gap-4">
+        <div className="flex flex-wrap items-center justify-center gap-x-5 gap-y-2 text-xs font-semibold text-slate-500">
+          <Link to="/legal#privacy-policy" className="hover:text-primary transition-colors">Privacy Policy</Link>
+          <Link to="/legal#terms-and-conditions" className="hover:text-primary transition-colors">Terms & Conditions</Link>
+          <Link to="/legal#disclaimer" className="hover:text-primary transition-colors">Disclaimer</Link>
+          <Link to="/legal#cookie-policy" className="hover:text-primary transition-colors">Cookie Policy</Link>
+        </div>
+
         <div className="flex items-center gap-2 text-slate-600 text-sm font-medium">
           Made with <span className="text-red-500 mx-1">❤️</span> by
           <a href="https://staffarc.in" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 hover:opacity-80 transition-opacity">
